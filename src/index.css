@@ -1,0 +1,12 @@
+@import "tailwindcss";
+/* app styles */
+html, body, #root { height: 100%; }
+
+/* optional terminal style */
+.terminal {
+  background: #0b1020;
+  color: #e6edf3;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+  border-radius: 12px;
+  padding: 12px;
+}
