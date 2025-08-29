@@ -2,8 +2,9 @@
 import * as faceMesh from '@mediapipe/face_mesh';
 import * as cam from '@mediapipe/camera_utils';
 
-const BACKEND_HTTP = process.env.REACT_APP_ADMIN_BACKEND_HTTP || 'http://localhost:3002';
-const BACKEND_WS = process.env.REACT_APP_ADMIN_BACKEND_WS || 'ws://localhost:3002/ws';
+const BACKEND_HTTP = import.meta.env.VITE_ADMIN_BACKEND_HTTP || 'https://rigal.in/api';
+const BACKEND_WS = import.meta.env.VITE_ADMIN_BACKEND_WS || 'wss://rigal.in/ws';
+
 
 
 function IconLogo() {
