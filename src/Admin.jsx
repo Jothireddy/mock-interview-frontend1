@@ -540,8 +540,10 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import * as faceMesh from '@mediapipe/face_mesh';
 import * as cam from '@mediapipe/camera_utils';
 
-const BACKEND_HTTP = process.env.REACT_APP_ADMIN_BACKEND_HTTP || 'https://rigal.in/api';
-const BACKEND_WS = process.env.REACT_APP_ADMIN_BACKEND_WS || 'wss://rigal.in/ws';
+// Hardcoded admin backend URLs
+const BACKEND_HTTP = 'https://admin.rigal.in';
+const BACKEND_WS = 'wss://admin.rigal.in/ws';
+
 
 
 function IconLogo() {
